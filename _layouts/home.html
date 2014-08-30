@@ -43,18 +43,18 @@
       <dd data-magellan-arrival="day15"><a href="#day15">15</a></dd>
       <dd data-magellan-arrival="day14"><a href="#day14">14</a></dd>
       <dd data-magellan-arrival="day13"><a href="#day13">13</a></dd>
-      <dd data-magellan-arrival="day12"><a href="#day13">12</a></dd>
-      <dd data-magellan-arrival="day11"><a href="#day13">11</a></dd>
-      <dd data-magellan-arrival="day10"><a href="#day13">10</a></dd>
-      <dd data-magellan-arrival="day9"><a href="#day13">9</a></dd>
-      <dd data-magellan-arrival="day8"><a href="#day13">8</a></dd>
-      <dd data-magellan-arrival="day7"><a href="#day13">7</a></dd>
-      <dd data-magellan-arrival="day6"><a href="#day13">6</a></dd>
-      <dd data-magellan-arrival="day5"><a href="#day13">5</a></dd>
-      <dd data-magellan-arrival="day4"><a href="#day13">4</a></dd>
-      <dd data-magellan-arrival="day3"><a href="#day13">3</a></dd>
-      <dd data-magellan-arrival="day2"><a href="#day13">2</a></dd>
-      <dd data-magellan-arrival="day1"><a href="#day13">1</a></dd>
+      <dd data-magellan-arrival="day12"><a href="#day12">12</a></dd>
+      <dd data-magellan-arrival="day11"><a href="#day11">11</a></dd>
+      <dd data-magellan-arrival="day10"><a href="#day10">10</a></dd>
+      <dd data-magellan-arrival="day9"><a href="#day9">9</a></dd>
+      <dd data-magellan-arrival="day8"><a href="#day8">8</a></dd>
+      <dd data-magellan-arrival="day7"><a href="#day7">7</a></dd>
+      <dd data-magellan-arrival="day6"><a href="#day6">6</a></dd>
+      <dd data-magellan-arrival="day5"><a href="#day5">5</a></dd>
+      <dd data-magellan-arrival="day4"><a href="#day4">4</a></dd>
+      <dd data-magellan-arrival="day3"><a href="#day3">3</a></dd>
+      <dd data-magellan-arrival="day2"><a href="#day2">2</a></dd>
+      <dd data-magellan-arrival="day1"><a href="#day1">1</a></dd>
     </dl>
   </div>
 <hr>
@@ -94,11 +94,31 @@
   </div>
 </footer>
 
+  <!-- At the bottom of your page but inside of the body tag -->
+  <ol class="joyride-list" data-joyride>
+    <li data-id="firstStop" data-text="Next" data-options="tip_location: top; prev_button: false">
+      <p>Hello and welcome to the HTML sketch I made for your proposed site layout. Please take notes and give detailed feedback about all aspects of the site. Know that most of the content is placeholder content and most of the design choices are meant to be just a general vibe. There's no color or design flourish, aside from a few defaults, so you'll need to call in a real design expert still </p>
+    </li>
+    <li data-id="numero1" data-class="custom so-awesome" data-text="Next" data-prev-text="Prev">
+      <h4>Stop #1</h4>
+      <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
+    </li>
+    <li data-id="numero2" data-button="Next" data-prev-text="Prev" data-options="tip_location:top;tip_animation:fade">
+      <h4>Stop #2</h4>
+      <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+    </li>
+    <li data-button="End" data-prev-text="Prev">
+      <h4>Stop #3</h4>
+      <p>It works as a modal too!</p>
+    </li>
+  </ol>
+
 	<script src="static/javascripts/jquery.js"></script>
 	<script src="static/javascripts/foundation.js"></script>
 	<script src="static/javascripts/foundation.reveal.js"></script>
 	<script src="static/javascripts/foundation.magellan.js"></script>
-
+	<script src="static/javascripts/foundation.joyride.js"></script>
+  <script src="static/javascripts/jquery.cookie.js"></script>
   <script>
   $(document).foundation();
   
@@ -108,6 +128,8 @@
  
   });
   </script>
+
+
 
 </body>
 </html>
