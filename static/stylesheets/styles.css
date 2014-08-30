@@ -1,0 +1,19 @@
+#header {
+  height: 107px;
+  background: #2a2b2e /* insert image here if you want */;
+  border-bottom: 0px solid;
+  padding-top: 20px;
+}
+
+
+
+section { padding-top: 10px; padding-bottom: 10px; }
+section.hero, .dark { background-color: #2a2b2e; color: #d3d3d3; }
+section.hero h2, .dark h2 { color: #d3d3d3; }
+
+#header h1 { color: #FFF; }
+h3.aside { color: #999; margin-top: 20px; }
+h2 + h3.aside { margin-left: 20px; }
+footer ul { line-height: 1.4rem; }
+footer ul.inline-list { line-height: 2.5rem; }
+footer { background-color: #eee; }

@@ -1,0 +1,28 @@
+org_name: Be More
+org_subname: 40 Stories in 40 Days
+markdown: kramdown
+footer:
+ - text: home
+   icon: home
+   href: ./
+ - text: subreddit
+   icon: social-reddit
+   href: http://www.reddit.com/
+ - text: twitter
+   icon: social-twitter
+   href: https://twitter.com/
+ - text: post
+   icon: pencil
+   href: 
+ - text: wiki
+   icon: database
+   href: 
+ - text: github
+   icon: social-github
+   href: https://github.com/michaelsnook/jekyll-foundation-base/
+ - text: "CC0 1.0"
+   icon: closed-caption
+   href: https://github.com/michaelsnook/futurist-party-dev/blob/gh-pages/LICENSE
+ - text: "jekyll-foundation-base"
+   icon: social-github
+   href: https://github.com/michaelsnook/

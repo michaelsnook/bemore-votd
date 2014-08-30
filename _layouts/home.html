@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ site.org_name }} {% if page.title and site.org_name %}|{% endif %} {{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="static/images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="static/stylesheets/normalize.css" />
+  <link rel="stylesheet" href="static/stylesheets/foundation.css" />
+  <link rel="stylesheet" href="static/stylesheets/foundation-icons.css" />
+  <link rel="stylesheet" href="static/stylesheets/styles.css" />
+  
+  <script src="static/javascripts/modernizr.js"></script>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=814163285279857&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<nav id="header">
+  <div class="row">
+    <div class="small-12 columns">
+
+      <h1 class="left">{{ site.org_name }}</h1>
+      <img class="left" src="/static/images/bemore-mark.png">
+      <h3 class="aside left">{{ site.org_subname }}</h3>
+    </div>
+  </div>
+</nav>
+
+<nav class="top-bar" data-topbar role="navigation">
+
+<div class="row dark"><div class="medium-12 columns right">
+<hr>
+  <div class="dark" data-magellan-expedition="fixed">
+    <dl class="sub-nav">
+      <dd>Day</dd>
+      <dd data-magellan-arrival="day15"><a href="#day15">15</a></dd>
+      <dd data-magellan-arrival="day14"><a href="#day14">14</a></dd>
+      <dd data-magellan-arrival="day13"><a href="#day13">13</a></dd>
+      <dd data-magellan-arrival="day12"><a href="#day13">12</a></dd>
+      <dd data-magellan-arrival="day11"><a href="#day13">11</a></dd>
+      <dd data-magellan-arrival="day10"><a href="#day13">10</a></dd>
+      <dd data-magellan-arrival="day9"><a href="#day13">9</a></dd>
+      <dd data-magellan-arrival="day8"><a href="#day13">8</a></dd>
+      <dd data-magellan-arrival="day7"><a href="#day13">7</a></dd>
+      <dd data-magellan-arrival="day6"><a href="#day13">6</a></dd>
+      <dd data-magellan-arrival="day5"><a href="#day13">5</a></dd>
+      <dd data-magellan-arrival="day4"><a href="#day13">4</a></dd>
+      <dd data-magellan-arrival="day3"><a href="#day13">3</a></dd>
+      <dd data-magellan-arrival="day2"><a href="#day13">2</a></dd>
+      <dd data-magellan-arrival="day1"><a href="#day13">1</a></dd>
+    </dl>
+  </div>
+<hr>
+</div></div>
+
+</nav>
+
+
+
+
+<div class="body-wrapper">  
+  {{ content }}
+</div>
+
+<footer>
+  <hr />
+  <br />
+  <br class="" />
+  
+    
+  <div class="row">
+   <img src="http://placehold.it/800x120"
+  </div>
+  
+  <hr />
+  <div class="row">
+    <div class="medium-12 columns">
+      <ul class="inline-list">
+        {% for item in site.footer %}
+        <li><a href="{% if item.href %}{{ item.href }}{% else %}#{% endif %}">
+          {% if item.icon %}<i class="fi-{{ item.icon }}"></i>{% endif %}
+          {% if item.text %}{{ item.text }}{% endif %}
+        </a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>
+
+	<script src="static/javascripts/jquery.js"></script>
+	<script src="static/javascripts/foundation.js"></script>
+	<script src="static/javascripts/foundation.reveal.js"></script>
+	<script src="static/javascripts/foundation.magellan.js"></script>
+
+  <script>
+  $(document).foundation();
+  
+  $(document).ready(function() {
+ 
+    // site javascript here
+ 
+  });
+  </script>
+
+</body>
+</html>
